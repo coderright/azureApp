@@ -19,7 +19,7 @@ password = 'Welcome@1234'
 trust = 'no'
 driver = '{ODBC Driver 17 for SQL Server}'
 R_SERVER = redis.Redis(host='redisakshay.redis.cache.windows.net',
-                       port=6379, db=0, password='Fw0ZQKFhJHfjPmWd5TzmdpapVHSY1FBCzaXPw+2SfP4=')
+                       port=6379, db=0, password='JPxzV0A8xhbDPXPmA0cjn4fNlnyRvgo9D9V2s7PcCNE=')
 
 
 def disdata():
