@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <title>{% block title %}{% endblock %}EarthQuake Data</title>
+    {% endblock %}
+</head>
+<body>
+<header>
+
+<h3>Name: Rohit Manhas</h3>
+<h3>ID: 1001657127</h3>
+
+</header>
+
+<p>
+ <form action="/dispdata" method="post">
+   <input type="submit" value=" get all data"><br/><br/>
+</form>
+</p>
+<p>
+ <form action="/getdata" method="get">
+	Magnitude from<input type="text" name="magfrom" maxlength="200" width="60"> 
+ 	To<input type="text" name="magto" maxlength="200" width="60"> 
+	Queries count:<input type="text" name="noq" maxlength="200" width="60">
+   <input type="submit" value="querytimes"><br/><br/>
+</form>
+</p>
+</body>
+</html>

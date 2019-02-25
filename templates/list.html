@@ -1,0 +1,24 @@
+<html>
+
+   <body>
+      <header> <h1> This page lists the Earthquake records </h1>
+      </header>
+      <table border = 1>
+         <thead>
+            <td>Magnitude</td>
+            <td>Latitude</td>
+            <td>Longitude</td>
+            <td>Place</td>
+         </thead>
+
+         {% for row in ci %}
+         <tr>
+            <td>{{ row["mag"] }}</td>
+            <td>{{ row["latitude"] }}</td>
+            <td> {{ row["longitude"] }}</td>
+            <td>{{ row["place"] }}</td>
+         </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>

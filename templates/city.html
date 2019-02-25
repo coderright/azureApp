@@ -1,0 +1,19 @@
+<!-- # Name:Akshay Waikar
+# ID:1001373973
+# Course number- CSE 6331-003 -->
+{# Display information about a city. #}
+{# The app fetches the information from the database and passes it into this page in "ci". #}
+
+{% block title %}Earthquake Information{% endblock %}
+{% block content %}
+
+{# Loop over cities if we have multiple results for popular names like Milan, Rome, Berlin #}
+{% for city in ci %}
+ 
+  <!-- This retrives all the data based on the content typed in textbox of index.html -->
+  <p>The mag is <b>({{city["time"]}})</b> the time is <b> ({{city["latitude"]}}) </b> <b> ({{city["longitude"]}}) </b>. <b> ({{city["place"]}}) </b>.
+
+
+
+{% endfor %}
+{% endblock %}
